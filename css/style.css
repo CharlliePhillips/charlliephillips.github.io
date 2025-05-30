@@ -7,6 +7,9 @@ body {
   color: #666666;
   font-weight: 400;
   font-size: 1rem; }
+img {
+  width: 500px;
+}
 
 ::-moz-selection {
   background: #000;
