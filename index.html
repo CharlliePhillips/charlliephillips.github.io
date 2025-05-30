@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
-
+<style>
+a:link {
+  color:aqua;
+}
+a:visited {
+  color:blueviolet
+}
+a:hover, a:active {
+  color:aquamarine
+}
+</style>
 <head>
   <title>Charles Phillips</title>
   <meta charset="utf-8">
@@ -79,19 +89,71 @@
 
         <div class="row ">
           <div class="col-12 mb-4 position-relative">
+            <h3 class="section-title">GT Junior Design: Redox OS Service Monitor</h3>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
+            <p>For my CS junior design project my team and I created a simple service monitor for Redox OS. Redox is a new microkernel operating system written in Rust. I learned Rust for this project and thoroughly enjoyed learning the new system to try and build out some important features. With some guidance from our proffessors and the Redox community we created a nice proof of concept with a CLI and GUI in libcosmic. Watch the video below if you'd like to know more.</p>
+            <p> </p>
+          </div>
+          <div class="col-lg-4 order-2 order-lg-2">
+            <div style="align-items: center;">
+              <iframe width="500" height="281" src="https://www.youtube.com/embed/lzeUhNs34CU?si=tTo_pzvZ8wGsh0f_" title="YouTube video player" frameborder="0" style="margin-left: 33vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p style="text-align: center;"><a href="https://github.com/CharlliePhillips/JIF-4328">GitHub</a></p>
+              <p style="text-align: center;"><a href="https://www.redox-os.org/news/this-month-250430/">Redox April 2024 Newsletter</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row ">
+          <div class="col-12 mb-4 position-relative">
             <h3 class="section-title">GT Simulator 2024</h3>
           </div>
           <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-            <p>This is a simulation of being a gatech student for the GBA. Made By Charles Phillips for CS2110 Spring 2024 with Mr. Mark Moss.
-               The game was written in C and the images where made in GIMP, the ROM can be downloaded <a
+            <p>This is a simulation of being a gatech student for the GBA. I made for CS2110 Spring 2024 with Mr. Mark Moss.
+               The game was written in C and the graphics where made in GIMP, the ROM can be downloaded <a
                 href="https://github.com/CharlliePhillips/GTSIMULATOR2024/releases/tag/1.0">here</a>.</p>
             <p> </p>
           </div>
           <div class="col-lg-4 order-2 order-lg-2">
             <div style="align-items: center;">
-              <img src="images/gtsim.png" width="1000" alt="Image" style="margin-left: 13vw;" class="img-fluid">
+              <img src="images/gtsim.png" width="750" alt="Image" style="margin-left: 26vw;" class="img-fluid">
             </div>
               <p style="text-align: center;">It even runs on real hardware!</p>
+          </div>
+        </div>
+
+
+        <div class="row ">
+          <div class="col-12 mb-4 position-relative">
+            <h3 class="section-title">Keyboard Only Driving Simulator</h3>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
+            <p>Have you ever wanted to relive learning to drive stick? Me neither, but I wanted to try building a driving sim specifically designed to be played with a keyboard in the Godot engine. I thought it would be a good idea to use Vim's right hand key bindings to move the shifter. I was able to get a prototype working (video below) but the controls can be difficult and I spent a lot of time tweaking the gearing system to no avail. The "drivetrain" code would likely need a complete overhaul which I may come back to but I have other ideas from this project I want to revisit first. You can find the Godot project on github <a
+                href="https://github.com/CharlliePhillips/drive">here</a>.</p>
+            <p> </p>
+          </div>
+          <div class="col-lg-4 order-2 order-lg-2">
+            <div style="align-items: center;">
+              <iframe width="500" height="281" src="https://www.youtube.com/embed/fP_7vIZ4igs?si=keXci5gBVJmAeRmO" title="YouTube video player" frameborder="0" style="margin-left: 33vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row ">
+          <div class="col-12 mb-4 position-relative">
+            <h3 class="section-title">GT Custom 3D Printed Keycap</h3>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
+            <p>I don't use Windows and got sick of the "win" key on the keyboard I made, so I used OpenSCAD to make a better keycap to match my keyboard's Ramblin Wreck theme. Micro center had a very nice gold 3d printer filament which worked perfectly! More info and models in the github repo <a
+                href="https://github.com/CharlliePhillips/GTXDA125U-Keycap">here</a>.</p>
+            <p> </p>
+          </div>
+          <div class="col-lg-4 order-2 order-lg-2">
+            <div style="align-items: center;">
+              <img src="images/keycap.png" width="750" alt="Image" style="margin-left: 26vw;" class="img-fluid">
+            </div>
           </div>
         </div>
 
@@ -369,11 +431,8 @@
             </div>
             <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
               <div class="bg-light pt-5">
-                <img src="images/cat1.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
                 <p></p>
-                <img src="images/cat2.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
                 <p></p>
-                <img src="images/cat3.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
                 <p></p>
                 <img src="images/displacment.PNG" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
                 <p></p>
@@ -408,6 +467,7 @@
                 Scroll
                 down for the related graph and tables</p>
               <h3>Plan 10/10/19</h3>
+                <img src="images/cat1.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
               <p>Once we found out it had to have a fulcrum arm we decided we'd try to get around this by putting a
                 football launcher that uses vex wheels at the end of the arm however we quickly realized that the
                 fact
@@ -420,6 +480,7 @@
                 a
                 little bit easier to do as we could very easily measure our theta and initial height.</p>
               <h3>Design 10/10/19</h3>
+                <img src="images/cat2.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
               <p>Since neither of us had the cSTEM advisement we had little time to build let alone design the
                 catapult.
                 however when we did have a chance to design we drew out something that we thought would work well
@@ -428,6 +489,7 @@
                 arm,
                 a
                 base, and some rubber bands to power it.</p>
+                <img src="images/cat3.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
             </div>
             <div class="col-lg-4 order-3 order-lg-3">
               <h3>Create 10/12/19</h3>
@@ -459,12 +521,6 @@
         </div>
 
   </section>
-
-
-
-
-
-
 
   <section class="site-section" id="contact-section">
     <div class="container">
@@ -501,6 +557,7 @@
                 <li><a href="https://youtube.com/c/sparercheese">Main youtube channel</a></li>
                 <li><a href="https://youtube.com/channel/UCozi5znjwwGR50RLvOJEO2g">Secondary youtube channel</a></li>
               </ul>
+              <p style="text-align: center;">© Charles Phillips 2025</p>
             </div>
           </div>
         </div>
@@ -509,8 +566,6 @@
       </div>
     </div>
   </footer>
-
-  </div> <!-- .site-wrap -->
+  </div>
 </body>
-
 </html>
