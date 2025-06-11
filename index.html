@@ -1,15 +1,32 @@
 <!doctype html>
 <html lang="en">
 <style>
+:root {
+    color-scheme: light dark;
+}
 a:link {
-  color:aqua;
+  color: light-dark(#0000EE, aqua);
 }
 a:visited {
-  color:blueviolet
+  color:light-dark(#551A8B, blueviolet);
 }
 a:hover, a:active {
-  color:aquamarine
+  color:light-dark(#0000FF, aquamarine);
 }
+body {
+  font-size: 1.5vw;
+  background-color: light-dark(white, #222222);
+  color: light-dark(black, rgb(238, 238, 238));
+  
+}
+img, iframe{
+    width: 40vw;
+}
+iframe {
+    height: 22vw;
+    margin-left: 0%;
+}
+
 </style>
 <head>
   <title>Charles Phillips</title>
@@ -17,576 +34,375 @@ a:hover, a:active {
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 </head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="font-size: 24px; background-color:#222222; color:rgb(238, 238, 238);">
+<!--style="font-size: 24px; background-color:#222222; color:rgb(238, 238, 238);"-->
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" >
 
 
 
   <div class="site-wrap">
-    <!--    
-    <header>
-      <center>
-        [<a href="#research"><big><b>Home</b></big></a>]
-        [<a href="#publication"><big><b>About</b></big></a>]
-        [<a href="#project"><big><b>Portfolio</b></big></a>]
-        [<a href="#courses"><big><b>Contact</b></big></a>]
-      </center> 
-    </header>
-    -->
 
-
-    <div class="site-blocks-cover overlay bg-light" id="home-section" style="text-align: center;">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
-            <div class="row">
-              <div class="col-lg-6">
-                <h1 class="text-black">I'm Charles Phillips</h1>
-                <img src="images/me.jpg" width="200" alt="Image" class="img-fluid">
-                <p class="lead">I'm a student and software engineer in Atlanta GA</p>
-                <p><a href="resume.pdf" class="btn smoothscroll btn-primary">Resume</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <hr noShade size=4>
-  <div class="site-section" id="about-section">
-    <div class="container">
-      <div class="row ">
-        <div class="col-12 mb-4 position-relative">
-          <h2 style="text-align: center;">About Me</h2>
-        </div>
-        <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-          <div class="bg-light pt-0">
-            <a href="https://share.amuse.io/5SqkIT_oyG0q"></a>
-          </div>
-        </div>
-        <div class="col-lg-4 order-2 order-lg-1">
-          <p font-size="24px">I am a Computer Science student at Georgia Tech, I am in the Devices and Systems Architecture threads.
-            I'm most interested in, and looking to pursue a career in operating systems, game design, and industrial automation. I enjoy working on personal
-            projects to expore this ambition in my free time with school and work. I love the city of Atlanta and
-            never plan to move away.</p>
-        </div>
-        <div class="col-lg-4 order-3 order-lg-3">
-          <p style="text-align: center;"><a href="#contact-section">Contact Me</a></p>
-        </div>
-      </div>
-    </div>
+  <div class="site-blocks-cover overlay bg-light" id="home-section" style="text-align: center;">
+    <h1 class="text-black">I'm Charles Phillips</h1>
+    <img src="images/me.jpg" style="width: 22vw;" alt="Image" class="img-fluid">
+    <p class="lead">I'm a student and software engineer in Atlanta GA</p>
+    <p><a href="resume.pdf" class="btn smoothscroll btn-primary">Resume</a></p>
   </div>
   <hr noShade size=4>
 
-  <section class="site-section block__62272" id="portfolio-section">
 
-    <div class="container">
-      <div class="col-12 mb-4 position-relative">
+  <h2 style="text-align: center;">About Me</h2>
+  <a href="https://share.amuse.io/5SqkIT_oyG0q"></a>
+  <p font-size="24px">I am a Computer Science student at Georgia Tech, I am in the Devices and Systems Architecture threads.
+    I'm most interested in, and looking to pursue a career in operating systems, game design, and industrial automation. I enjoy working on personal
+    projects to expore this ambition in my free time with school and work. I love the city of Atlanta and
+    never plan to move away.</p>
+  <p style="text-align: center;">
+    <a href="#contact-section">Contact Me</a>
+  </p>
+
+  <hr noShade size=4>
+
+  <section id="portfolio-section">
         <h2 style="text-align: center;">Personal Project Portfolio</h2>
 
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h3 class="section-title">GT Junior Design: Redox OS Service Monitor</h3>
+          <h3 class="section-title">GT Junior Design: Redox OS Service Monitor</h3>
+          <p>
+            For my CS junior design project my team and I created a simple service monitor for Redox OS. Redox is a new microkernel operating system written in Rust. I learned Rust for this project and thoroughly enjoyed learning the new system to try and build out some important features. With somehttps://github.com/CharlliePhillips/charlliephillips.github.io guidance from our proffessors and the Redox community we created a nice proof of concept with a CLI and GUI in libcosmic. Watch the video below if you'd like to know more.
+          </p>
+          <div style="text-align: center; align-items: center;">
+            <iframe src="https://www.youtube.com/embed/lzeUhNs34CU?si=tTo_pzvZ8wGsh0f_" title="YouTube video player" frameborder="0" style="margin-left: 0vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p style="text-align: center;"><a href="https://github.com/CharlliePhillips/JIF-4328">GitHub</a></p>
+            <p style="text-align: center;"><a href="https://www.redox-os.org/news/this-month-250430/">Redox April 2024 Newsletter</a></p>
           </div>
-          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-            <p>For my CS junior design project my team and I created a simple service monitor for Redox OS. Redox is a new microkernel operating system written in Rust. I learned Rust for this project and thoroughly enjoyed learning the new system to try and build out some important features. With some guidance from our proffessors and the Redox community we created a nice proof of concept with a CLI and GUI in libcosmic. Watch the video below if you'd like to know more.</p>
-            <p> </p>
+
+          <h3 class="section-title">GT Simulator 2024</h3>
+          <p>This is a simulation of being a gatech student for the GBA. I made for CS2110 Spring 2024 with Mr. Mark Moss.
+              The game was written in C and the graphics where made in GIMP. It is a simple game where you try to doge the same hazards that GT students have to on a day to day in current year. The ROM can be downloaded <a
+              href="https://github.com/CharlliePhillips/GTSIMULATOR2024/releases/tag/1.0">here</a>.</p>
+          <div style="align-items: center; text-align: center;">
+            <img src="images/gtsim.png" alt="Image" style="width: 60vw; " class="img-fluid">
+            <p style="text-align: center;">It even runs on real hardware!</p>
           </div>
-          <div class="col-lg-4 order-2 order-lg-2">
-            <div style="align-items: center;">
-              <iframe width="500" height="281" src="https://www.youtube.com/embed/lzeUhNs34CU?si=tTo_pzvZ8wGsh0f_" title="YouTube video player" frameborder="0" style="margin-left: 33vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p style="text-align: center;"><a href="https://github.com/CharlliePhillips/JIF-4328">GitHub</a></p>
-              <p style="text-align: center;"><a href="https://www.redox-os.org/news/this-month-250430/">Redox April 2024 Newsletter</a></p>
-            </div>
+
+          <h3 class="section-title">Keyboard Only Driving Simulator</h3>
+          <p>Have you ever wanted to relive learning to drive stick? Me neither, but I wanted to try building a driving sim specifically designed to be played with a keyboard in the Godot engine. I thought it would be a good idea to use Vim's right hand key bindings to move the shifter. I was able to get a prototype working (video below) but the controls can be difficult and I spent a lot of time tweaking the gearing system to no avail. The "drivetrain" code would likely need a complete overhaul which I may come back to but I have other ideas from this project I want to revisit first. You can find the Godot project on github <a
+              href="https://github.com/CharlliePhillips/drive">here</a>.</p>
+          <div style="text-align: center;">
+            <iframe width="500" height="281" src="https://www.youtube.com/embed/fP_7vIZ4igs?si=keXci5gBVJmAeRmO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-        </div>
+
+          <h3 class="section-title">GT Custom 3D Printed Keycap</h3>
+          <p>
+            I don't use Windows and got sick of the "win" key on the keyboard I made, so I used OpenSCAD to make a better keycap to match my keyboard's Ramblin Wreck theme. Micro center had a very nice gold 3d printer filament which worked perfectly! More info and models in the github repo <a href="https://github.com/CharlliePhillips/GTXDA125U-Keycap">here</a>
+            .
+          </p>
+          <div style="text-align: center;">
+            <img src="images/keycap.png" alt="Image" style="width: 60vw;">
+          </div>
 
 
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h3 class="section-title">GT Simulator 2024</h3>
+          <h3 class="section-title">Home MARTA Arrival Time Board</h3>
+          <p>I made this so that my roomates and I can see at a glance when the next trains will be arriving at our
+            nearest marta station, It is meant to be run on a Raspberry pi
+            by our apartment door. You can view the project <a
+              href="https://github.com/CharlliePhillips/HomeMartaBoard">here</a>.</p>
+          <div style="text-align: center;">
+            <img src="images/marta.JPG" alt="Image">
           </div>
-          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-            <p>This is a simulation of being a gatech student for the GBA. I made for CS2110 Spring 2024 with Mr. Mark Moss.
-               The game was written in C and the graphics where made in GIMP. It is a simple game where you try to doge the same hazards that GT students have to on a day to day in current year. The ROM can be downloaded <a
-                href="https://github.com/CharlliePhillips/GTSIMULATOR2024/releases/tag/1.0">here</a>.</p>
-            <p> </p>
+
+          <h3 class="section-title">Auto Tier Violation</h3>
+          <p>I made this GUI program to automatically "Tier Violate" or "Write Up" Lifeguards for not showing up for
+            manditory training. Names have been removed from test CSV for privacy. Typing 80+ names and everything
+            into that google form was taking too long, this gets it done in 5 minutes instead of an hour and a half.
+            My own custom google form is included for testing if you would like, I put in my own to again protect the
+            privacy of X company and it's employees. You can see the project <a
+              href="https://github.com/CharlliePhillips/AutoViolate">here</a>.</p>
+          <div style="text-align: center;">
+            <img src="images/autoviolate.png" alt="Image">
           </div>
-          <div class="col-lg-4 order-2 order-lg-2">
-            <div style="align-items: center;">
-              <img src="images/gtsim.png" width="750" alt="Image" style="margin-left: 26vw;" class="img-fluid">
-            </div>
-              <p style="text-align: center;">It even runs on real hardware!</p>
-          </div>
-        </div>
 
 
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h3 class="section-title">Keyboard Only Driving Simulator</h3>
+          <h3 class="section-title">GPS</h3>
+          <p>I made a short beat tape for fun, availible on all streaming platforms. You can listen <a
+              href="https://share.amuse.io/5SqkIT_oyG0q">here</a>.</p>
+          <div style="text-align: center;">
+            <img src="images/gps.jpg" alt="Image">
           </div>
-          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-            <p>Have you ever wanted to relive learning to drive stick? Me neither, but I wanted to try building a driving sim specifically designed to be played with a keyboard in the Godot engine. I thought it would be a good idea to use Vim's right hand key bindings to move the shifter. I was able to get a prototype working (video below) but the controls can be difficult and I spent a lot of time tweaking the gearing system to no avail. The "drivetrain" code would likely need a complete overhaul which I may come back to but I have other ideas from this project I want to revisit first. You can find the Godot project on github <a
-                href="https://github.com/CharlliePhillips/drive">here</a>.</p>
-            <p> </p>
-          </div>
-          <div class="col-lg-4 order-2 order-lg-2">
-            <div style="align-items: center;">
-              <iframe width="500" height="281" src="https://www.youtube.com/embed/fP_7vIZ4igs?si=keXci5gBVJmAeRmO" title="YouTube video player" frameborder="0" style="margin-left: 33vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h3 class="section-title">GT Custom 3D Printed Keycap</h3>
-          </div>
-          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-            <p>I don't use Windows and got sick of the "win" key on the keyboard I made, so I used OpenSCAD to make a better keycap to match my keyboard's Ramblin Wreck theme. Micro center had a very nice gold 3d printer filament which worked perfectly! More info and models in the github repo <a
-                href="https://github.com/CharlliePhillips/GTXDA125U-Keycap">here</a>.</p>
-            <p> </p>
-          </div>
-          <div class="col-lg-4 order-2 order-lg-2">
-            <div style="align-items: center;">
-              <img src="images/keycap.png" width="750" alt="Image" style="margin-left: 26vw;" class="img-fluid">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h3 class="section-title">Home MARTA Arrival Time Board</h3>
-          </div>
-          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-            <p>I made this so that my roomates and I can see at a glance when the next trains will be arriving at our
-              nearest marta station, It is meant to be run on a Raspberry pi
-              by our apartment door. You can view the project <a
-                href="https://github.com/CharlliePhillips/HomeMartaBoard">here</a>.</p>
-            <p> </p>
-          </div>
-          <div class="col-lg-4 order-2 order-lg-2">
-            <div style="align-items: center;">
-              <img src="images/marta.JPG" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h3 class="section-title">Auto Tier Violation</h3>
-          </div>
-          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-            <p>I made this GUI program to automatically "Tier Violate" or "Write Up" Lifeguards for not showing up for
-              manditory training. Names have been removed from test CSV for privacy. Typing 80+ names and everything
-              into that google form was taking too long, this gets it done in 5 minutes instead of an hour and a half.
-              My own custom google form is included for testing if you would like, I put in my own to again protect the
-              privacy of X company and it's employees. You can see the project <a
-                href="https://github.com/CharlliePhillips/AutoViolate">here</a>.</p>
-            <p> </p>
-          </div>
-          <div class="col-lg-4 order-2 order-lg-2">
-            <div class="bg-light pt-0">
-              <img src="images/autoviolate.png" width="500" height="656" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h3 class="section-title">GPS</h3>
-          </div>
-          <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-            <p>I made a short beat tape for fun, availible on all streaming platforms. You can listen <a
-                href="https://share.amuse.io/5SqkIT_oyG0q">here</a>.</p>
-            <p> </p>
-          </div>
-          <div class="col-lg-4 order-2 order-lg-2">
-            <div class="bg-light pt-0">
-              <img src="images/gps.jpg" width="500" height="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-            </div>
-          </div>
-        </div>
 
         <hr noshade size=4>
-        <div class="container">
-          <div class="row ">
-            <div class="col-12 mb-4 position-relative">
-              <h2 style="text-align: center">High School Projects</h2>
-            </div>
+        <h2 style="text-align: center">High School Projects</h2>
 
-            <div class="row ">
-              <div class="col-12 mb-4 position-relative">
-                <h3 class="section-title">Trouble In Traffic Town</h3>
-              </div>
-              <div class="col-lg-4 order-1 order-lg-1 mb-4 mb-lg-0">
-                <p>In my senior year of high school my partner Kunal and I entered this game to the video game and simulation design competition for FBLA (Future Business Leaders of America). I started on the game in the fall of 2020 and Kunal joined me by the end of the year. We finished in early 2021 and won 3rd place in Georgia. The Godot project and a working release build can be found on my <a
-                    href="https://github.com/CharlliePhillips/kaneda">github</a>.</p>
-              </div>
-              <div class="col-lg-4 order-2 order-lg-2">
-                <div class="bg-light pt-0">
-                  <ul style="display: inline; margin-left: 13vw;">
-                    <li style="display: inline-block; margin-right: 10px;">
-                      <img src="images/ttttitle.png" width="500" alt="Image" class="img-fluid">
-                    </li>
-                    <li style="display: inline-block; margin-right: 10px;">
-                       <img src="images/tttlevel.png" width="500" alt="Image" class="img-fluid">
-                   </li>
-                   <li style="display: inline-block; margin-right: 10px;">
-                        <img src="images/tttscore.png" width="500" alt="Image" class="img-fluid">
-                   </li>
-                </ul>
-                </div>
-              </div>
-            </div>
-
-
-            <div>
-              <div>
-                <h3 class="section-title">cSTEM/RISE</h3>
-                <img src="images/RISE.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-              </div>
-            </div>
-            <img src="images/edp.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-            <div class="col-lg-4 order-2 order-lg-1">
-              <p>In the cSTEM program at collins hill I have completed many projects ranging from robotics to
-                biofeul as
-                well as makinng video games and film projects. In my free time also do photography.</p>
-              <p> </p>
-            </div>
-            <div class="col-lg-4 order-3 order-lg-3">
-              <h4>The Engineering Design Process</h4>
-              <p>In the cSTEM program we are supposed to use the Engineering Design Process(EDP) for everything. The
-                engineering design process is broken up into the 5 steps, investigate, plan, design, create, and
-                evaluate.
-              </p>
-              <ol style="margin-left: 20vw;" >
-                <li>
-                    <h4>Investigate</h4> - To observe or inquire into in detail; examine systematically.
-                </li>
-                <li>
-                    <h4>Plan</h4> - A proposed or intended course of action.
-                </li>
-                <li>
-                    <h4>Design</h4> - To conceive or fashion in the mind; invent.
-                </li>
-                <li>
-                    <h4>Create</h4> - To give rise to; produce.
-                  </li>
-                <li>
-                    <h4>Evaluate</h4> - To determine the importance, effectiveness, or worth of; asses.
-                </li>
-              </ol>
-            </div>
-
+          <h3 class="section-title">Trouble In Traffic Town</h3>
+          <p>
+            In my senior year of high school my partner Kunal and I entered this game to the video game and simulation design competition for FBLA (Future Business Leaders of America). I started on the game in the fall of 2020 and Kunal joined me by the end of the year. We finished in early 2021 and won 3rd place in Georgia. The Godot project and a working release build can be found on my
+            <a href="https://github.com/CharlliePhillips/kaneda">github</a>
+            .
+          </p>
+          <div style="text-align: center;">
+            <ul style="display: inline;">
+              <li style="display: inline-block;">
+                <img src="images/ttttitle.png" alt="Image">
+              </li>
+              <li style="display: inline-block;">
+                <img src="images/tttlevel.png" alt="Image">
+              </li>
+              <li style="display: inline-block;">
+                <img src="images/tttscore.png"alt="Image">
+              </li>
+            </ul>
           </div>
-          <div class="row ">
-            <div class="col-12 mb-4 position-relative">
-              <h3 class="section-title">Think Global Act Local</h3>
-            </div>
-            <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-              <div class="bg-light pt-5">
-                <img src="images/tgal.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-4 order-2 order-lg-1">
-              <p>First semester of the 2018-2019 year we started the "Think Global Act Local" project where we had
-                to
-                come
-                up with an innovation that would solve a problem in our community. Me and my good friends Scarlett
-                Ramu
-                and Erick Lopez teamed up to create a single computer that would power two separate windows
-                computers.
-                Our
-                project went really well and at both of the innovation expos we had many teachers, students, and
-                parents
-                who were interested in our prototype and its potential applications.</p>
-              <p> </p>
-            </div>
-            <div class="col-lg-4 order-3 order-lg-3">
-              <iframe name="avtfxfilm" width="500" height="281" src="https://www.youtube.com/embed/t9GqtGJJmNw"
-                frameborder="0" style="margin-left: 33vw;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-              <p> </p>
-            </div>
 
+          <h3 class="section-title">cSTEM/RISE</h3>
+
+          <p>In the cSTEM program at collins hill I have completed many projects ranging from robotics to
+            biofeul as
+            well as makinng video games and film projects. In my free time also do photography.</p>
+          <h4>The Engineering Design Process</h4>
+          <p>In the cSTEM program we are supposed to use the Engineering Design Process(EDP) for everything. The
+            engineering design process is broken up into the 5 steps, investigate, plan, design, create, and
+            evaluate.
+          </p>
+          <ol>
+            <li>
+                <h4>Investigate</h4> - To observe or inquire into in detail; examine systematically.
+            </li>
+            <li>
+                <h4>Plan</h4> - A proposed or intended course of action.
+            </li>
+            <li>
+                <h4>Design</h4> - To conceive or fashion in the mind; invent.
+            </li>
+            <li>
+                <h4>Create</h4> - To give rise to; produce.
+              </li>
+            <li>
+                <h4>Evaluate</h4> - To determine the importance, effectiveness, or worth of; asses.
+            </li>
+          </ol>
+          <div style="text-align: center;">
+            <img src="images/RISE.png" alt="Image" style = "vertical-align: top">
+            <img src="images/edp.png" alt="Image">
           </div>
-          <div class="row ">
-            <div class="col-12 mb-4 position-relative">
-              <h3 class="section-title">The Most Dangerous Game</h3>
-            </div>
-            <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-              <div class="bg-light pt-5">
-                <img src="images/vex.jfif" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-4 order-2 order-lg-1">
-              <p>At the beginning of 2018 my fellow freshman and I started a project based on the VEX robotics
-                system,
-                and
-                it revolved around evolution which is what we where learning in biology at the time. The idea was
-                that
-                we
-                would all build the same robot and then compete with them. after the competitions we would add
-                upgrades
-                and switch up the design to adapt to the environment and our competitors but we would not know what
-                changes that the teachers would make to the arena. My group made a robot we called "BloodBot9000",
-                below
-                is a video I put together of the robot.</p>
-              <p> </p>
-            </div>
-            <div class="col-lg-4 order-3 order-lg-3">
-              <iframe width="500" height="281" src="https://www.youtube.com/embed/HBFQXphn2aU" frameborder="0"
-                style="margin-left: 33vw;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
 
+          <h3 class="section-title">Think Global Act Local</h3>
+          <p>
+            First semester of the 2018-2019 year we started the "Think Global Act Local" project where we had
+            to
+            come
+            up with an innovation that would solve a problem in our community. Me and my good friends Scarlett
+            Ramu
+            and Erick Lopez teamed up to create a single computer that would power two separate windows
+            computers.
+            Our
+            project went really well and at both of the innovation expos we had many teachers, students, and
+            parents
+            who were interested in our prototype and its potential applications.
+          </p>
+          <div style="text-align: center;">
+            <img src="images/tgal.jpg" alt="Image">
+            <p></p>
+            <iframe name="avtfxfilm" src="https://www.youtube.com/embed/t9GqtGJJmNw" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="row ">
-            <div class="col-12 mb-4 position-relative">
-              <h4 class="section-title">Chem-E-Car</h4>
-            </div>
-            <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-              <div class="bg-light pt-5">
-
-                <p></p>
-                <p></p>
-                <p></p>
-              </div>
-            </div>
-            <div class="col-lg-4 order-2 order-lg-1">
-              <h4>Investigation</h4>
-              <p>To start off this project we had to come up with 3 possible reactions to power our car. I chose
-                calcium
-                carbonate and hydrochloric acid and vinegar + baking soda as a backup, but i really really wanted to
-                do
-                a
-                DIY battery made from coke, copper and zinc. I really wanted to do the coke battery to experiment
-                with
-                electrolysis because the chemistry of batteries and how they worked really interested me and so we
-                ruled
-                out the other two unless we really had to do them. These reactions and the battery especially raised
-                a
-                few
-                questions. How much voltage/current can this battery produce? What kind of motors are we using and
-                can
-                they produce enough torque to propel whatever chassis we use? What should we make the chassis out
-                of?
-                How
-                big should the wheels be? Will we have to use gears to transfer the energy from the motors to the
-                axles?
-                Does it have to be aerodynamic? </p>
-              <h4>Planning</h4>
-              <p>To follow up with these questions I did some research on the mechanics of car/vehicle design. I
-                found
-                that aerodynamics could drastically improve our speed and efficiency but in the long run we did not
-                have
-                time to implement an aerodynamic shell like we brainstormed. Another thing that ended up applying
-                much
-                more than I thought would was an article about re-assembling a vintage car, in the article they
-                discussed
-                some of the sourcing for the parts and how hard it was. When we were trying to get parts like
-                bearings
-                we
-                couldn't because we thought that the school would be able to provide us with supplies but a lot of
-                the
-                stuff we needed, like bearings, was out of stock.</p>
-            </div>
-            <div class="col-lg-4 order-3 order-lg-3">
-              <h4>Design, Create, & Evaluate</h4>
-              <p>Here is sketch idea that I had for our Chem-E-car. The circles on the chassis are where the cells
-                of my
-                battery are and you can see some of the measurements and markings that me and my group put together
-                so
-                that it would be easier for us to make a 3d model of it. We used this design because it could hold
-                up to
-                5
-                cells if necessary and could fit the motors, wheels and axles without any trouble.</p>
-              <img src="images/chemSketch.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-              <p>This is the inventor drawing for the first prototype that my group came up with, as you can see it
-                greatly resembles the paper sketch that we did.</p>
-              <img src="images/Inventor1.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-              <p>Here is the second design that me and my group created. At this point we realized that our super
-                cool
-                coke battery wasn't producing any current and we had to scrap it so we strapped some AA batteries on
-                and
-                stripped away a large amount of the chassis as well as changing the material to plastic.</p>
-              <img src="images/inventor2.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-              <p>Here is a car design that Joseph and I collaborated on after school as a little experiment, it is
-                very
-                simple with some AA batteries and a propeller but it managed to go all the way down A hall with no
-                hitches
-                so I'd call it a success. We did this because both of us created batteries that produced a voltage
-                but
-                had
-                too high of a resistance for the current to flow.</p>
-              <img src="images/car.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-            </div>
-
+          <h3 class="section-title">The Most Dangerous Game</h3>
+          <p>At the beginning of 2018 my fellow freshman and I started a project based on the VEX robotics
+            system,
+            and
+            it revolved around evolution which is what we where learning in biology at the time. The idea was
+            that
+            we
+            would all build the same robot and then compete with them. after the competitions we would add
+            upgrades
+            and switch up the design to adapt to the environment and our competitors but we would not know what
+            changes that the teachers would make to the arena. My group made a robot we called "BloodBot9000",
+            below
+            is a video I put together of the robot.</p>
+          <div style="text-align: center;">
+            <iframe src="https://www.youtube.com/embed/HBFQXphn2aU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="row ">
-            <div class="col-12 mb-4 position-relative">
-              <h3 class="section-title">Lord Of The Flies</h3>
-            </div>
-            <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-              <div class="bg-light pt-5">
-                <iframe width="500" height="281" src="https://www.youtube.com/embed/Dcu4jsZT6tM" frameborder="0"
-                  style="margin-left: 33vw;"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="col-lg-4 order-2 order-lg-1">
-              <p>After finnishing "The Lord Of The Flies" by William Golding we were tasked with creating a biofuel
-                made
-                with materials you could find on the island in lord of the flies and then a short flim that
-                incorporated
-                the biofuel.</p>
-              <!--so our biofuel may or may not have been illegal to make the way we made it....-->
-              <p> </p>
-            </div>
-
-
+          <h4 class="section-title">Chem-E-Car</h4>
+          <h4>Investigation</h4>
+          <p>To start off this project we had to come up with 3 possible reactions to power our car. I chose
+            calcium
+            carbonate and hydrochloric acid and vinegar + baking soda as a backup, but i really really wanted to
+            do
+            a
+            DIY battery made from coke, copper and zinc. I really wanted to do the coke battery to experiment
+            with
+            electrolysis because the chemistry of batteries and how they worked really interested me and so we
+            ruled
+            out the other two unless we really had to do them. These reactions and the battery especially raised
+            a
+            few
+            questions. How much voltage/current can this battery produce? What kind of motors are we using and
+            can
+            they produce enough torque to propel whatever chassis we use? What should we make the chassis out
+            of?
+            How
+            big should the wheels be? Will we have to use gears to transfer the energy from the motors to the
+            axles?
+            Does it have to be aerodynamic? </p>
+          <h4>Planning</h4>
+          <p>To follow up with these questions I did some research on the mechanics of car/vehicle design. I
+            found
+            that aerodynamics could drastically improve our speed and efficiency but in the long run we did not
+            have
+            time to implement an aerodynamic shell like we brainstormed. Another thing that ended up applying
+            much
+            more than I thought would was an article about re-assembling a vintage car, in the article they
+            discussed
+            some of the sourcing for the parts and how hard it was. When we were trying to get parts like
+            bearings
+            we
+            couldn't because we thought that the school would be able to provide us with supplies but a lot of
+            the
+            stuff we needed, like bearings, was out of stock.</p>
+          <h4>Design, Create, & Evaluate</h4>
+          <p>Here is sketch idea that I had for our Chem-E-car. The circles on the chassis are where the cells
+            of my
+            battery are and you can see some of the measurements and markings that me and my group put together
+            so
+            that it would be easier for us to make a 3d model of it. We used this design because it could hold
+            up to
+            5
+            cells if necessary and could fit the motors, wheels and axles without any trouble.</p>
+          <div style="text-align: center;">
+            <img src="images/chemSketch.jpg" width="500" alt="Image"  class="img-fluid">
           </div>
-          <div class="row ">
-            <div class="col-12 mb-4 position-relative">
-              <h2 class="section-title">Catapult Project</h2>
-            </div>
-            <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-              <div class="bg-light pt-5">
-                <p></p>
-                <p></p>
-                <p></p>
-                <img src="images/displacment.PNG" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-                <p></p>
-                <img src="images/tables.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-                <p></p><img src="images/MLD.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-                <p></p>
-                <h3>Final Product</h3>
-                <p>Our final product was much better despite only having a range of about a meter. The final product
-                  was
-                  much more consistent and we were able to more accurately calculate where the football would be at
-                  any
-                  given point. below is a video of our final product.</p>
-                <p></p>
-              <iframe width="500" height="281" src="https://www.youtube.com/embed/AXoxjcar0uI" frameborder="0"
-                style="margin-left: 33vw;"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-              </div>
-            </div>
-            <div>
-              <h3>Investigate 10/10/19</h3>
-              <p>Our Challenge was that we had to build a device to launch a small foam footballs at least 2 meters
-                consistently, it had to fit in a 50x50cm cube, and we couldn't use kits or pneumatic launching or a
-                slingshot and it had to have a launching arm which limited us to making a catapult or some variation
-                of
-                a
-                catapult, like a trebuchet. We started our investigation with a mind map sort of thing where we
-                wrote
-                out
-                ideas to solve the problem of getting a small football across the room. We would also have to
-                complete
-                tables and graphs that described our vertical and horizontal velocity, acceleration, and position.
-                Scroll
-                down for the related graph and tables</p>
-              <h3>Plan 10/10/19</h3>
-                <img src="images/cat1.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-              <p>Once we found out it had to have a fulcrum arm we decided we'd try to get around this by putting a
-                football launcher that uses vex wheels at the end of the arm however we quickly realized that the
-                fact
-                we
-                were placed in a group where neither of us had the cSTEM advisement and we both had busy schedules
-                that
-                disallowed us from working on the catapult after school. So we decided to go for a pretty basic,
-                bare
-                bones setup that we could feasibly create with the little time we had. This would also make our math
-                a
-                little bit easier to do as we could very easily measure our theta and initial height.</p>
-              <h3>Design 10/10/19</h3>
-                <img src="images/cat2.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-              <p>Since neither of us had the cSTEM advisement we had little time to build let alone design the
-                catapult.
-                however when we did have a chance to design we drew out something that we thought would work well
-                and we
-                could complete in a reasonable amount of time. The drawing is very basic, it only has the launching
-                arm,
-                a
-                base, and some rubber bands to power it.</p>
-                <img src="images/cat3.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-            </div>
-            <div class="col-lg-4 order-3 order-lg-3">
-              <h3>Create 10/12/19</h3>
-              <p>The creation of our first prototype was relatively quick and easy reflecting the basic design we
-                created.
-                You might initially think this as a relatively bad thing but it was exactly what we needed due to
-                our
-                extreme time constraint. We were able to finish our first prototype in about an hour after school in
-                the
-                engineering room.below is one of the videos of what we made that day</p>
-
-              <h3>Evaluate - Test 10/18/19 & 10/24/19</h3>
-              <p>Our first test went horrible to be frank, our rubber bands didn't have enough tension to actually
-                pull
-                the launching arm around the fulcrum to launch the ball so we took turns powering the catapult. Not
-                only
-                did our design barley work at all, it was extremely inconsistent but we averaged about 1.4 seconds
-                in
-                the
-                air and about a 2.7 meter range. but the minimum distance we got was .3 meters and the max was 6 so
-                we
-                really needed to fix some things.</p>
-              <iframe width="500" height="281" src="https://www.youtube.com/embed/IOL3nXUxdnQ" frameborder="0"
-                style="margin-left: 33vw;"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-
+          <p>
+            This is the inventor drawing for the first prototype that my group came up with, as you can see it greatly resembles the paper sketch that we did.
+          </p>
+          <div style="text-align: center;">
+            <img src="images/Inventor1.png" width="500" alt="Image"  class="img-fluid">
           </div>
-        </div>
+          <p>Here is the second design that me and my group created. At this point we realized that our super
+            cool
+            coke battery wasn't producing any current and we had to scrap it so we strapped some AA batteries on
+            and
+            stripped away a large amount of the chassis as well as changing the material to plastic.</p>
+          <div style="text-align: center;">
+            <img src="images/inventor2.png" width="500" alt="Image"  class="img-fluid">
+          </div>  
+          <p>Here is a car design that Joseph and I collaborated on after school as a little experiment, it is
+            very
+            simple with some AA batteries and a propeller but it managed to go all the way down A hall with no
+            hitches
+            so I'd call it a success. We did this because both of us created batteries that produced a voltage
+            but
+            had
+            too high of a resistance for the current to flow.</p>
+          <div style="text-align: center;">
+            <img src="images/car.jpg" width="500" alt="Image"  class="img-fluid">
+          </div>
+          <h3 class="section-title">Lord Of The Flies</h3>
 
+          <p>After finnishing "The Lord Of The Flies" by William Golding we were tasked with creating a biofuel
+            made
+            with materials you could find on the island in lord of the flies and then a short flim that
+            incorporated
+            the biofuel.</p>
+          <!--so our biofuel may or may not have been illegal to make the way we made it....-->
+          <div style="text-align: center;">
+            <iframe src="https://www.youtube.com/embed/Dcu4jsZT6tM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h2 class="section-title">Catapult Project</h2>
+
+          <h3>Investigate 10/10/19</h3>
+          <p>Our Challenge was that we had to build a device to launch a small foam footballs at least 2 meters
+            consistently, it had to fit in a 50x50cm cube, and we couldn't use kits or pneumatic launching or a
+            slingshot and it had to have a launching arm which limited us to making a catapult or some variation
+            of
+            a
+            catapult, like a trebuchet. We started our investigation with a mind map sort of thing where we
+            wrote
+            out
+            ideas to solve the problem of getting a small football across the room. We would also have to
+            complete
+            tables and graphs that described our vertical and horizontal velocity, acceleration, and position.
+            Scroll
+            down for the related graph and tables</p>
+          <h3>Plan 10/10/19</h3>
+          <div style="text-align: center;">
+            <img src="images/cat1.jpg" width="500" alt="Image"  class="img-fluid">
+          </div>
+          <p>Once we found out it had to have a fulcrum arm we decided we'd try to get around this by putting a
+            football launcher that uses vex wheels at the end of the arm however we quickly realized that the
+            fact
+            we
+            were placed in a group where neither of us had the cSTEM advisement and we both had busy schedules
+            that
+            disallowed us from working on the catapult after school. So we decided to go for a pretty basic,
+            bare
+            bones setup that we could feasibly create with the little time we had. This would also make our math
+            a
+            little bit easier to do as we could very easily measure our theta and initial height.</p>
+          <h3>Design 10/10/19</h3>
+          <div style="text-align: center;">
+            <img src="images/cat2.jpg" alt="Image">
+          </div>
+          <p>Since neither of us had the cSTEM advisement we had little time to build let alone design the
+            catapult.
+            however when we did have a chance to design we drew out something that we thought would work well
+            and we
+            could complete in a reasonable amount of time. The drawing is very basic, it only has the launching
+            arm,
+            a
+            base, and some rubber bands to power it.</p>
+           <div style="text-align: center;">
+            <img src="images/cat3.jpg" alt="Image">
+           </div>
+          <h3>Create 10/12/19</h3>
+          <p>The creation of our first prototype was relatively quick and easy reflecting the basic design we
+            created.
+            You might initially think this as a relatively bad thing but it was exactly what we needed due to
+            our
+            extreme time constraint. We were able to finish our first prototype in about an hour after school in
+            the
+            engineering room.below is one of the videos of what we made that day</p>
+          <h3>Evaluate - Test 10/18/19 & 10/24/19</h3>
+          <p>Our first test went horrible to be frank, our rubber bands didn't have enough tension to actually
+            pull
+            the launching arm around the fulcrum to launch the ball so we took turns powering the catapult. Not
+            only
+            did our design barley work at all, it was extremely inconsistent but we averaged about 1.4 seconds
+            in
+            the
+            air and about a 2.7 meter range. but the minimum distance we got was .3 meters and the max was 6 so
+            we
+            really needed to fix some things.</p>
+            <div style="text-align: center;">
+              <iframe style="vertical-align: top;" src="https://www.youtube.com/embed/IOL3nXUxdnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <img src="images/tables.png" alt="Image">
+              <img style="vertical-align: top;" src="images/displacment.PNG" alt="Image">
+              <img src="images/MLD.png" alt="Image">
+            </div>
+          <h3>Final Product</h3>
+          <p>
+            Our final product was much better despite only having a range of about a meter. The final product was much more consistent and we were able to more accurately calculate where the football would be at any given point. below is a video of our final product.
+          </p>
+          <div style="text-align: center;">
+            <iframe src="https://www.youtube.com/embed/AXoxjcar0uI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
   </section>
+
   <hr noshade size=4>
-  <section class="site-section" id="contact-section">
-    <div style="text-align: center;" class="container">
-      <div class="row">
-        <div class="col-12 mb-5 position-relative">
-          <h2 class="section-title text-center mb-5">Contact Me</h2>
-        </div>
-      </div>
+
+  <section id="contact-section">
+    <div style="text-align: center;">
+      <h2 class="section-title text-center mb-5">Contact Me</h2>
       <a>charlie_l_phillips@proton.me</a>
     </div>
   </section>
 
-  <footer class="site-section bg-light footer">
-    <div style="text-align: center;"class="container">
-      <div class="row mb-5">
-        <div class="col-md-3">
-          <h3 class="footer-title">School Address</h3>
-          <p><span class="d-inline-block d-md-block">266 Ferst Dr NW,</span> Atlanta, GA 30332, USA</p>
-        </div>
-        <div class="col-md-5 mx-auto">
-          <div class="row">
-            <div class="col-lg-4">
-
-            </div>
-            <div class="col-lg-4">
-
-            </div>
-            <div class="col-lg-4">
-              <h3 class="footer-title">Links</h3>
-              <a href="https://youtube.com/c/sparercheese">Main youtube channel</a>
-              <a href="https://youtube.com/channel/UCozi5znjwwGR50RLvOJEO2g">Secondary youtube channel</a>
-              <hr noshade size=4>
-              <p style="text-align: center;">© Charles Phillips 2025</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-        </div>
-      </div>
+  <footer>
+    <div style="text-align: center;">
+      <h3 class="footer-title">School Address</h3>
+      <p><span class="d-inline-block d-md-block">266 Ferst Dr NW,</span> Atlanta, GA 30332, USA</p>
+      <h3 class="footer-title">Links</h3>
+      <a href="https://youtube.com/c/sparercheese">Main youtube channel</a>
+      <a href="https://youtube.com/channel/UCozi5znjwwGR50RLvOJEO2g">Secondary youtube channel</a>
+      <hr noshade size=4>
+      <p style="text-align: center;">© Charles Phillips 2025</p>
     </div>
   </footer>
-  </div>
 </body>
 </html>
