@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 <style>
+:root {
+    color-scheme: light dark;
+}
 a:link {
   color:aqua;
 }
@@ -10,6 +13,20 @@ a:visited {
 a:hover, a:active {
   color:aquamarine
 }
+body {
+  font-size: 1.5vw;
+  background-color: light-dark(white, #222222);
+  color: light-dark(black, rgb(238, 238, 238));
+  
+}
+
+img, iframe{
+    width: 40vw;
+}
+
+iframe {
+    height: 22vw;
+}
 </style>
 <head>
   <title>Charles Phillips</title>
@@ -17,8 +34,8 @@ a:hover, a:active {
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 </head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="font-size: 24px; background-color:#222222; color:rgb(238, 238, 238);">
+<!--style="font-size: 24px; background-color:#222222; color:rgb(238, 238, 238);"-->
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" >
 
 
 
@@ -26,7 +43,7 @@ a:hover, a:active {
 
   <div class="site-blocks-cover overlay bg-light" id="home-section" style="text-align: center;">
     <h1 class="text-black">I'm Charles Phillips</h1>
-    <img src="images/me.jpg" width="200" alt="Image" class="img-fluid">
+    <img src="images/me.jpg" style="width: 200px;" alt="Image" class="img-fluid">
     <p class="lead">I'm a student and software engineer in Atlanta GA</p>
     <p><a href="resume.pdf" class="btn smoothscroll btn-primary">Resume</a></p>
   </div>
@@ -49,7 +66,7 @@ a:hover, a:active {
           <h3 class="section-title">GT Junior Design: Redox OS Service Monitor</h3>
           <p>For my CS junior design project my team and I created a simple service monitor for Redox OS. Redox is a new microkernel operating system written in Rust. I learned Rust for this project and thoroughly enjoyed learning the new system to try and build out some important features. With some guidance from our proffessors and the Redox community we created a nice proof of concept with a CLI and GUI in libcosmic. Watch the video below if you'd like to know more.</p>
           <div style="text-align: center; align-items: center;">
-            <iframe width="500" height="281" src="https://www.youtube.com/embed/lzeUhNs34CU?si=tTo_pzvZ8wGsh0f_" title="YouTube video player" frameborder="0" style="margin-left: 0vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/lzeUhNs34CU?si=tTo_pzvZ8wGsh0f_" title="YouTube video player" frameborder="0" style="margin-left: 0vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p style="text-align: center;"><a href="https://github.com/CharlliePhillips/JIF-4328">GitHub</a></p>
             <p style="text-align: center;"><a href="https://www.redox-os.org/news/this-month-250430/">Redox April 2024 Newsletter</a></p>
           </div>
@@ -58,8 +75,8 @@ a:hover, a:active {
           <p>This is a simulation of being a gatech student for the GBA. I made for CS2110 Spring 2024 with Mr. Mark Moss.
               The game was written in C and the graphics where made in GIMP. It is a simple game where you try to doge the same hazards that GT students have to on a day to day in current year. The ROM can be downloaded <a
               href="https://github.com/CharlliePhillips/GTSIMULATOR2024/releases/tag/1.0">here</a>.</p>
-          <div style="align-items: center;">
-            <img src="images/gtsim.png" width="750" alt="Image" style="margin-left: 26vw;" class="img-fluid">
+          <div style="align-items: center; text-align: center;">
+            <img src="images/gtsim.png" alt="Image" style="width: 60vw; " class="img-fluid">
             <p style="text-align: center;">It even runs on real hardware!</p>
           </div>
 
@@ -73,8 +90,8 @@ a:hover, a:active {
           <h3 class="section-title">GT Custom 3D Printed Keycap</h3>
           <p>I don't use Windows and got sick of the "win" key on the keyboard I made, so I used OpenSCAD to make a better keycap to match my keyboard's Ramblin Wreck theme. Micro center had a very nice gold 3d printer filament which worked perfectly! More info and models in the github repo <a
               href="https://github.com/CharlliePhillips/GTXDA125U-Keycap">here</a>.</p>
-          <div style="align-items: center;">
-            <img src="images/keycap.png" width="750" alt="Image" style="margin-left: 26vw;" class="img-fluid">
+          <div style="text-align: center;">
+            <img src="images/keycap.png" alt="Image">
           </div>
 
 
@@ -84,7 +101,7 @@ a:hover, a:active {
             by our apartment door. You can view the project <a
               href="https://github.com/CharlliePhillips/HomeMartaBoard">here</a>.</p>
           <div style="align-items: center;">
-            <img src="images/marta.JPG" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+            <img src="images/marta.JPG" width="500" alt="Image"  class="img-fluid">
           </div>
 
           <h3 class="section-title">Auto Tier Violation</h3>
@@ -95,7 +112,7 @@ a:hover, a:active {
             privacy of X company and it's employees. You can see the project <a
               href="https://github.com/CharlliePhillips/AutoViolate">here</a>.</p>
           <div>
-            <img src="images/autoviolate.png" width="500" height="656" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+            <img src="images/autoviolate.png"  alt="Image"  class="img-fluid">
           </div>
 
 
@@ -103,7 +120,7 @@ a:hover, a:active {
           <p>I made a short beat tape for fun, availible on all streaming platforms. You can listen <a
               href="https://share.amuse.io/5SqkIT_oyG0q">here</a>.</p>
           <div >
-            <img src="images/gps.jpg" width="500" height="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+            <img src="images/gps.jpg" width="500" height="500" alt="Image"  class="img-fluid">
           </div>
 
         <hr noshade size=4>
@@ -115,7 +132,7 @@ a:hover, a:active {
             <a href="https://github.com/CharlliePhillips/kaneda">github</a>
             .
           </p>
-          <ul style="display: inline; margin-left: 13vw;">
+          <ul style="display: inline; ">
             <li style="display: inline-block; margin-right: 10px;">
               <img src="images/ttttitle.png" width="500" alt="Image" class="img-fluid">
             </li>
@@ -129,8 +146,8 @@ a:hover, a:active {
 
 
           <h3 class="section-title">cSTEM/RISE</h3>
-          <img src="images/RISE.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-          <img src="images/edp.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+          <img src="images/RISE.png" width="500" alt="Image"  class="img-fluid">
+          <img src="images/edp.png" width="500" alt="Image"  class="img-fluid">
           <p>In the cSTEM program at collins hill I have completed many projects ranging from robotics to
             biofeul as
             well as makinng video games and film projects. In my free time also do photography.</p>
@@ -139,7 +156,7 @@ a:hover, a:active {
             engineering design process is broken up into the 5 steps, investigate, plan, design, create, and
             evaluate.
           </p>
-          <ol style="margin-left: 20vw;" >
+          <ol  >
             <li>
                 <h4>Investigate</h4> - To observe or inquire into in detail; examine systematically.
             </li>
@@ -158,7 +175,7 @@ a:hover, a:active {
           </ol>
 
           <h3 class="section-title">Think Global Act Local</h3>
-            <img src="images/tgal.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+            <img src="images/tgal.jpg" width="500" alt="Image"  class="img-fluid">
           <p>First semester of the 2018-2019 year we started the "Think Global Act Local" project where we had
             to
             come
@@ -171,11 +188,11 @@ a:hover, a:active {
             parents
             who were interested in our prototype and its potential applications.</p>
           <iframe name="avtfxfilm" width="500" height="281" src="https://www.youtube.com/embed/t9GqtGJJmNw"
-            frameborder="0" style="margin-left: 33vw;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
           <h3 class="section-title">The Most Dangerous Game</h3>
-          <img src="images/vex.jfif" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+          <img src="images/vex.jfif" width="500" alt="Image"  class="img-fluid">
           <p>At the beginning of 2018 my fellow freshman and I started a project based on the VEX robotics
             system,
             and
@@ -189,7 +206,7 @@ a:hover, a:active {
             below
             is a video I put together of the robot.</p>
           <iframe width="500" height="281" src="https://www.youtube.com/embed/HBFQXphn2aU" frameborder="0"
-            style="margin-left: 33vw;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
           <h4 class="section-title">Chem-E-Car</h4>
@@ -238,16 +255,16 @@ a:hover, a:active {
             up to
             5
             cells if necessary and could fit the motors, wheels and axles without any trouble.</p>
-          <img src="images/chemSketch.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+          <img src="images/chemSketch.jpg" width="500" alt="Image"  class="img-fluid">
           <p>This is the inventor drawing for the first prototype that my group came up with, as you can see it
             greatly resembles the paper sketch that we did.</p>
-          <img src="images/Inventor1.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+          <img src="images/Inventor1.png" width="500" alt="Image"  class="img-fluid">
           <p>Here is the second design that me and my group created. At this point we realized that our super
             cool
             coke battery wasn't producing any current and we had to scrap it so we strapped some AA batteries on
             and
             stripped away a large amount of the chassis as well as changing the material to plastic.</p>
-          <img src="images/inventor2.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+          <img src="images/inventor2.png" width="500" alt="Image"  class="img-fluid">
           <p>Here is a car design that Joseph and I collaborated on after school as a little experiment, it is
             very
             simple with some AA batteries and a propeller but it managed to go all the way down A hall with no
@@ -256,11 +273,11 @@ a:hover, a:active {
             but
             had
             too high of a resistance for the current to flow.</p>
-          <img src="images/car.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+          <img src="images/car.jpg" width="500" alt="Image"  class="img-fluid">
 
           <h3 class="section-title">Lord Of The Flies</h3>
           <iframe width="500" height="281" src="https://www.youtube.com/embed/Dcu4jsZT6tM" frameborder="0"
-            style="margin-left: 33vw;"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
           <p>After finnishing "The Lord Of The Flies" by William Golding we were tasked with creating a biofuel
             made
@@ -271,9 +288,9 @@ a:hover, a:active {
 
 
           <h2 class="section-title">Catapult Project</h2>
-            <img src="images/displacment.PNG" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-            <img src="images/tables.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
-            <img src="images/MLD.png" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+            <img src="images/displacment.PNG" width="500" alt="Image"  class="img-fluid">
+            <img src="images/tables.png" width="500" alt="Image"  class="img-fluid">
+            <img src="images/MLD.png" width="500" alt="Image"  class="img-fluid">
             <h3>Final Product</h3>
             <p>Our final product was much better despite only having a range of about a meter. The final product
               was
@@ -281,7 +298,7 @@ a:hover, a:active {
               any
               given point. below is a video of our final product.</p>
           <iframe width="500" height="281" src="https://www.youtube.com/embed/AXoxjcar0uI" frameborder="0"
-            style="margin-left: 33vw;"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
           <h3>Investigate 10/10/19</h3>
           <p>Our Challenge was that we had to build a device to launch a small foam footballs at least 2 meters
@@ -298,7 +315,7 @@ a:hover, a:active {
             Scroll
             down for the related graph and tables</p>
           <h3>Plan 10/10/19</h3>
-            <img src="images/cat1.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+            <img src="images/cat1.jpg" width="500" alt="Image"  class="img-fluid">
           <p>Once we found out it had to have a fulcrum arm we decided we'd try to get around this by putting a
             football launcher that uses vex wheels at the end of the arm however we quickly realized that the
             fact
@@ -311,7 +328,7 @@ a:hover, a:active {
             a
             little bit easier to do as we could very easily measure our theta and initial height.</p>
           <h3>Design 10/10/19</h3>
-            <img src="images/cat2.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+            <img src="images/cat2.jpg" width="500" alt="Image"  class="img-fluid">
           <p>Since neither of us had the cSTEM advisement we had little time to build let alone design the
             catapult.
             however when we did have a chance to design we drew out something that we thought would work well
@@ -320,7 +337,7 @@ a:hover, a:active {
             arm,
             a
             base, and some rubber bands to power it.</p>
-            <img src="images/cat3.jpg" width="500" alt="Image" style="margin-left: 33vw;" class="img-fluid">
+            <img src="images/cat3.jpg" width="500" alt="Image"  class="img-fluid">
           <h3>Create 10/12/19</h3>
           <p>The creation of our first prototype was relatively quick and easy reflecting the basic design we
             created.
@@ -341,7 +358,7 @@ a:hover, a:active {
             we
             really needed to fix some things.</p>
           <iframe width="500" height="281" src="https://www.youtube.com/embed/IOL3nXUxdnQ" frameborder="0"
-            style="margin-left: 33vw;"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
   </section>
 
