@@ -35,6 +35,16 @@ iframe {
     height: 33vw;
     margin-left: 0%;
 }
+@media (min-width: 300px) {
+  .portrait {
+    width: 36vw;
+  }
+}
+@media (min-width: 768px) {
+  .portrait {
+    width: 25vw;
+  }
+}
 </style>
 
 <head>
@@ -52,7 +62,7 @@ iframe {
 
   <div class="site-blocks-cover overlay bg-light" id="home-section" style="text-align: center;">
     <h1 class="text-black">I'm Charles Phillips</h1>
-    <img src="images/me.jpg" alt="Image" style="width: 25vw;">
+    <img src="images/me.jpg" alt="Image" class="portrait">
     <p class="lead">I'm a student and software engineer in Atlanta GA</p>
     <p><a href="resume.pdf" class="btn smoothscroll btn-primary">Resume</a></p>
   </div>
