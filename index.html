@@ -5,13 +5,13 @@
     color-scheme: light dark;
 }
 a:link {
-  color:aqua;
+  color: light-dark(#0000EE, aqua);
 }
 a:visited {
-  color:blueviolet
+  color:light-dark(#551A8B, blueviolet);
 }
 a:hover, a:active {
-  color:aquamarine
+  color:light-dark(#0000FF, aquamarine);
 }
 body {
   font-size: 1.5vw;
@@ -19,14 +19,14 @@ body {
   color: light-dark(black, rgb(238, 238, 238));
   
 }
-
 img, iframe{
     width: 40vw;
 }
-
 iframe {
     height: 22vw;
+    margin-left: 0%;
 }
+
 </style>
 <head>
   <title>Charles Phillips</title>
@@ -43,7 +43,7 @@ iframe {
 
   <div class="site-blocks-cover overlay bg-light" id="home-section" style="text-align: center;">
     <h1 class="text-black">I'm Charles Phillips</h1>
-    <img src="images/me.jpg" style="width: 200px;" alt="Image" class="img-fluid">
+    <img src="images/me.jpg" style="width: 22vw;" alt="Image" class="img-fluid">
     <p class="lead">I'm a student and software engineer in Atlanta GA</p>
     <p><a href="resume.pdf" class="btn smoothscroll btn-primary">Resume</a></p>
   </div>
@@ -56,7 +56,9 @@ iframe {
     I'm most interested in, and looking to pursue a career in operating systems, game design, and industrial automation. I enjoy working on personal
     projects to expore this ambition in my free time with school and work. I love the city of Atlanta and
     never plan to move away.</p>
-  <p style="text-align: center;"><a href="#contact-section">Contact Me</a></p>
+  <p style="text-align: center;">
+    <a href="#contact-section">Contact Me</a>
+  </p>
 
   <hr noShade size=4>
 
@@ -64,7 +66,9 @@ iframe {
         <h2 style="text-align: center;">Personal Project Portfolio</h2>
 
           <h3 class="section-title">GT Junior Design: Redox OS Service Monitor</h3>
-          <p>For my CS junior design project my team and I created a simple service monitor for Redox OS. Redox is a new microkernel operating system written in Rust. I learned Rust for this project and thoroughly enjoyed learning the new system to try and build out some important features. With some guidance from our proffessors and the Redox community we created a nice proof of concept with a CLI and GUI in libcosmic. Watch the video below if you'd like to know more.</p>
+          <p>
+            For my CS junior design project my team and I created a simple service monitor for Redox OS. Redox is a new microkernel operating system written in Rust. I learned Rust for this project and thoroughly enjoyed learning the new system to try and build out some important features. With somehttps://github.com/CharlliePhillips/charlliephillips.github.io guidance from our proffessors and the Redox community we created a nice proof of concept with a CLI and GUI in libcosmic. Watch the video below if you'd like to know more.
+          </p>
           <div style="text-align: center; align-items: center;">
             <iframe src="https://www.youtube.com/embed/lzeUhNs34CU?si=tTo_pzvZ8wGsh0f_" title="YouTube video player" frameborder="0" style="margin-left: 0vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p style="text-align: center;"><a href="https://github.com/CharlliePhillips/JIF-4328">GitHub</a></p>
@@ -83,15 +87,17 @@ iframe {
           <h3 class="section-title">Keyboard Only Driving Simulator</h3>
           <p>Have you ever wanted to relive learning to drive stick? Me neither, but I wanted to try building a driving sim specifically designed to be played with a keyboard in the Godot engine. I thought it would be a good idea to use Vim's right hand key bindings to move the shifter. I was able to get a prototype working (video below) but the controls can be difficult and I spent a lot of time tweaking the gearing system to no avail. The "drivetrain" code would likely need a complete overhaul which I may come back to but I have other ideas from this project I want to revisit first. You can find the Godot project on github <a
               href="https://github.com/CharlliePhillips/drive">here</a>.</p>
-          <div style="align-items: center;">
-            <iframe width="500" height="281" src="https://www.youtube.com/embed/fP_7vIZ4igs?si=keXci5gBVJmAeRmO" title="YouTube video player" frameborder="0" style="margin-left: 33vw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div style="text-align: center;">
+            <iframe width="500" height="281" src="https://www.youtube.com/embed/fP_7vIZ4igs?si=keXci5gBVJmAeRmO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <h3 class="section-title">GT Custom 3D Printed Keycap</h3>
-          <p>I don't use Windows and got sick of the "win" key on the keyboard I made, so I used OpenSCAD to make a better keycap to match my keyboard's Ramblin Wreck theme. Micro center had a very nice gold 3d printer filament which worked perfectly! More info and models in the github repo <a
-              href="https://github.com/CharlliePhillips/GTXDA125U-Keycap">here</a>.</p>
+          <p>
+            I don't use Windows and got sick of the "win" key on the keyboard I made, so I used OpenSCAD to make a better keycap to match my keyboard's Ramblin Wreck theme. Micro center had a very nice gold 3d printer filament which worked perfectly! More info and models in the github repo <a href="https://github.com/CharlliePhillips/GTXDA125U-Keycap">here</a>
+            .
+          </p>
           <div style="text-align: center;">
-            <img src="images/keycap.png" alt="Image">
+            <img src="images/keycap.png" alt="Image" style="width: 60vw;">
           </div>
 
 
@@ -100,8 +106,8 @@ iframe {
             nearest marta station, It is meant to be run on a Raspberry pi
             by our apartment door. You can view the project <a
               href="https://github.com/CharlliePhillips/HomeMartaBoard">here</a>.</p>
-          <div style="align-items: center;">
-            <img src="images/marta.JPG" width="500" alt="Image"  class="img-fluid">
+          <div style="text-align: center;">
+            <img src="images/marta.JPG" alt="Image">
           </div>
 
           <h3 class="section-title">Auto Tier Violation</h3>
@@ -111,16 +117,16 @@ iframe {
             My own custom google form is included for testing if you would like, I put in my own to again protect the
             privacy of X company and it's employees. You can see the project <a
               href="https://github.com/CharlliePhillips/AutoViolate">here</a>.</p>
-          <div>
-            <img src="images/autoviolate.png"  alt="Image"  class="img-fluid">
+          <div style="text-align: center;">
+            <img src="images/autoviolate.png" alt="Image">
           </div>
 
 
           <h3 class="section-title">GPS</h3>
           <p>I made a short beat tape for fun, availible on all streaming platforms. You can listen <a
               href="https://share.amuse.io/5SqkIT_oyG0q">here</a>.</p>
-          <div >
-            <img src="images/gps.jpg" width="500" height="500" alt="Image"  class="img-fluid">
+          <div style="text-align: center;">
+            <img src="images/gps.jpg" alt="Image">
           </div>
 
         <hr noshade size=4>
@@ -132,22 +138,22 @@ iframe {
             <a href="https://github.com/CharlliePhillips/kaneda">github</a>
             .
           </p>
-          <ul style="display: inline; ">
-            <li style="display: inline-block; margin-right: 10px;">
-              <img src="images/ttttitle.png" width="500" alt="Image" class="img-fluid">
-            </li>
-            <li style="display: inline-block; margin-right: 10px;">
-              <img src="images/tttlevel.png" width="500" alt="Image" class="img-fluid">
-            </li>
-            <li style="display: inline-block; margin-right: 10px;">
-              <img src="images/tttscore.png" width="500" alt="Image" class="img-fluid">
-            </li>
-          </ul>
-
+          <div style="text-align: center;">
+            <ul style="display: inline;">
+              <li style="display: inline-block;">
+                <img src="images/ttttitle.png" alt="Image">
+              </li>
+              <li style="display: inline-block;">
+                <img src="images/tttlevel.png" alt="Image">
+              </li>
+              <li style="display: inline-block;">
+                <img src="images/tttscore.png"alt="Image">
+              </li>
+            </ul>
+          </div>
 
           <h3 class="section-title">cSTEM/RISE</h3>
-          <img src="images/RISE.png" width="500" alt="Image"  class="img-fluid">
-          <img src="images/edp.png" width="500" alt="Image"  class="img-fluid">
+
           <p>In the cSTEM program at collins hill I have completed many projects ranging from robotics to
             biofeul as
             well as makinng video games and film projects. In my free time also do photography.</p>
@@ -156,7 +162,7 @@ iframe {
             engineering design process is broken up into the 5 steps, investigate, plan, design, create, and
             evaluate.
           </p>
-          <ol  >
+          <ol>
             <li>
                 <h4>Investigate</h4> - To observe or inquire into in detail; examine systematically.
             </li>
@@ -173,10 +179,14 @@ iframe {
                 <h4>Evaluate</h4> - To determine the importance, effectiveness, or worth of; asses.
             </li>
           </ol>
+          <div style="text-align: center;">
+            <img src="images/RISE.png" alt="Image" style = "vertical-align: top">
+            <img src="images/edp.png" alt="Image">
+          </div>
 
           <h3 class="section-title">Think Global Act Local</h3>
-            <img src="images/tgal.jpg" width="500" alt="Image"  class="img-fluid">
-          <p>First semester of the 2018-2019 year we started the "Think Global Act Local" project where we had
+          <p>
+            First semester of the 2018-2019 year we started the "Think Global Act Local" project where we had
             to
             come
             up with an innovation that would solve a problem in our community. Me and my good friends Scarlett
@@ -186,13 +196,14 @@ iframe {
             Our
             project went really well and at both of the innovation expos we had many teachers, students, and
             parents
-            who were interested in our prototype and its potential applications.</p>
-          <iframe name="avtfxfilm" width="500" height="281" src="https://www.youtube.com/embed/t9GqtGJJmNw"
-            frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
+            who were interested in our prototype and its potential applications.
+          </p>
+          <div style="text-align: center;">
+            <img src="images/tgal.jpg" alt="Image">
+            <p></p>
+            <iframe name="avtfxfilm" src="https://www.youtube.com/embed/t9GqtGJJmNw" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           <h3 class="section-title">The Most Dangerous Game</h3>
-          <img src="images/vex.jfif" width="500" alt="Image"  class="img-fluid">
           <p>At the beginning of 2018 my fellow freshman and I started a project based on the VEX robotics
             system,
             and
@@ -205,10 +216,9 @@ iframe {
             changes that the teachers would make to the arena. My group made a robot we called "BloodBot9000",
             below
             is a video I put together of the robot.</p>
-          <iframe width="500" height="281" src="https://www.youtube.com/embed/HBFQXphn2aU" frameborder="0"
-             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
+          <div style="text-align: center;">
+            <iframe src="https://www.youtube.com/embed/HBFQXphn2aU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           <h4 class="section-title">Chem-E-Car</h4>
           <h4>Investigation</h4>
           <p>To start off this project we had to come up with 3 possible reactions to power our car. I chose
@@ -255,16 +265,23 @@ iframe {
             up to
             5
             cells if necessary and could fit the motors, wheels and axles without any trouble.</p>
-          <img src="images/chemSketch.jpg" width="500" alt="Image"  class="img-fluid">
-          <p>This is the inventor drawing for the first prototype that my group came up with, as you can see it
-            greatly resembles the paper sketch that we did.</p>
-          <img src="images/Inventor1.png" width="500" alt="Image"  class="img-fluid">
+          <div style="text-align: center;">
+            <img src="images/chemSketch.jpg" width="500" alt="Image"  class="img-fluid">
+          </div>
+          <p>
+            This is the inventor drawing for the first prototype that my group came up with, as you can see it greatly resembles the paper sketch that we did.
+          </p>
+          <div style="text-align: center;">
+            <img src="images/Inventor1.png" width="500" alt="Image"  class="img-fluid">
+          </div>
           <p>Here is the second design that me and my group created. At this point we realized that our super
             cool
             coke battery wasn't producing any current and we had to scrap it so we strapped some AA batteries on
             and
             stripped away a large amount of the chassis as well as changing the material to plastic.</p>
-          <img src="images/inventor2.png" width="500" alt="Image"  class="img-fluid">
+          <div style="text-align: center;">
+            <img src="images/inventor2.png" width="500" alt="Image"  class="img-fluid">
+          </div>  
           <p>Here is a car design that Joseph and I collaborated on after school as a little experiment, it is
             very
             simple with some AA batteries and a propeller but it managed to go all the way down A hall with no
@@ -273,33 +290,22 @@ iframe {
             but
             had
             too high of a resistance for the current to flow.</p>
-          <img src="images/car.jpg" width="500" alt="Image"  class="img-fluid">
-
+          <div style="text-align: center;">
+            <img src="images/car.jpg" width="500" alt="Image"  class="img-fluid">
+          </div>
           <h3 class="section-title">Lord Of The Flies</h3>
-          <iframe width="500" height="281" src="https://www.youtube.com/embed/Dcu4jsZT6tM" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
           <p>After finnishing "The Lord Of The Flies" by William Golding we were tasked with creating a biofuel
             made
             with materials you could find on the island in lord of the flies and then a short flim that
             incorporated
             the biofuel.</p>
           <!--so our biofuel may or may not have been illegal to make the way we made it....-->
-
-
+          <div style="text-align: center;">
+            <iframe src="https://www.youtube.com/embed/Dcu4jsZT6tM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           <h2 class="section-title">Catapult Project</h2>
-            <img src="images/displacment.PNG" width="500" alt="Image"  class="img-fluid">
-            <img src="images/tables.png" width="500" alt="Image"  class="img-fluid">
-            <img src="images/MLD.png" width="500" alt="Image"  class="img-fluid">
-            <h3>Final Product</h3>
-            <p>Our final product was much better despite only having a range of about a meter. The final product
-              was
-              much more consistent and we were able to more accurately calculate where the football would be at
-              any
-              given point. below is a video of our final product.</p>
-          <iframe width="500" height="281" src="https://www.youtube.com/embed/AXoxjcar0uI" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
           <h3>Investigate 10/10/19</h3>
           <p>Our Challenge was that we had to build a device to launch a small foam footballs at least 2 meters
             consistently, it had to fit in a 50x50cm cube, and we couldn't use kits or pneumatic launching or a
@@ -315,7 +321,9 @@ iframe {
             Scroll
             down for the related graph and tables</p>
           <h3>Plan 10/10/19</h3>
+          <div style="text-align: center;">
             <img src="images/cat1.jpg" width="500" alt="Image"  class="img-fluid">
+          </div>
           <p>Once we found out it had to have a fulcrum arm we decided we'd try to get around this by putting a
             football launcher that uses vex wheels at the end of the arm however we quickly realized that the
             fact
@@ -328,7 +336,9 @@ iframe {
             a
             little bit easier to do as we could very easily measure our theta and initial height.</p>
           <h3>Design 10/10/19</h3>
-            <img src="images/cat2.jpg" width="500" alt="Image"  class="img-fluid">
+          <div style="text-align: center;">
+            <img src="images/cat2.jpg" alt="Image">
+          </div>
           <p>Since neither of us had the cSTEM advisement we had little time to build let alone design the
             catapult.
             however when we did have a chance to design we drew out something that we thought would work well
@@ -337,7 +347,9 @@ iframe {
             arm,
             a
             base, and some rubber bands to power it.</p>
-            <img src="images/cat3.jpg" width="500" alt="Image"  class="img-fluid">
+           <div style="text-align: center;">
+            <img src="images/cat3.jpg" alt="Image">
+           </div>
           <h3>Create 10/12/19</h3>
           <p>The creation of our first prototype was relatively quick and easy reflecting the basic design we
             created.
@@ -357,9 +369,19 @@ iframe {
             air and about a 2.7 meter range. but the minimum distance we got was .3 meters and the max was 6 so
             we
             really needed to fix some things.</p>
-          <iframe width="500" height="281" src="https://www.youtube.com/embed/IOL3nXUxdnQ" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            <div style="text-align: center;">
+              <iframe style="vertical-align: top;" src="https://www.youtube.com/embed/IOL3nXUxdnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <img src="images/tables.png" alt="Image">
+              <img style="vertical-align: top;" src="images/displacment.PNG" alt="Image">
+              <img src="images/MLD.png" alt="Image">
+            </div>
+          <h3>Final Product</h3>
+          <p>
+            Our final product was much better despite only having a range of about a meter. The final product was much more consistent and we were able to more accurately calculate where the football would be at any given point. below is a video of our final product.
+          </p>
+          <div style="text-align: center;">
+            <iframe src="https://www.youtube.com/embed/AXoxjcar0uI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
   </section>
 
   <hr noshade size=4>
